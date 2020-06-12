@@ -1,0 +1,36 @@
+// Import library functions for theme creation.
+@import '~@angular/material/theming';
+@import '~@pxblue/colors/palette.scss';
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.pxb-blue {
+  .checkbox-green {
+    $primary: mat-palette($pxb-green);
+    $accent: mat-palette($mat-grey, 600, 500, 900);
+    $warn: mat-palette($mat-red);
+    // Create the theme object (a Sass map containing all of the palettes).
+    $green-theme: mat-light-theme($primary, $accent, $warn);
+    @include mat-checkbox-theme($green-theme);
+  }
+  .checkbox-purple {
+    $primary: mat-palette($pxb-purple);
+    $accent: mat-palette($mat-grey, 600, 500, 900);
+    $warn: mat-palette($mat-red);
+    // Create the theme object (a Sass map containing all of the palettes).
+    $theme: mat-light-theme($primary, $accent, $warn);
+    @include mat-checkbox-theme($theme);
+  }
+  .checkbox-yellow {
+    $primary: mat-palette($pxb-yellow);
+    $accent: mat-palette($mat-grey, 600, 500, 900);
+    $warn: mat-palette($mat-red);
+    // Create the theme object (a Sass map containing all of the palettes).
+    $theme: mat-light-theme($primary, $accent, $warn);
+    @include mat-checkbox-theme($theme);
+  }
+}
