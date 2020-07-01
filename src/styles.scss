@@ -34,8 +34,22 @@ html, body {
     $theme: mat-light-theme($primary, $accent, $warn);
     @include mat-checkbox-theme($theme);
   }
-  .checkbox-branding-pine {
-    $primary: mat-palette($brand-pine);
+  .checkbox-brand-pine {
+    $brand-pine-with-contrast: map-merge($brand-pine, (
+      contrast: (
+        50: #000000,
+        100: #000000,
+        200: #000000,
+        300: #000000,
+        400: #ffffff,
+        500: #ffffff,
+        600: #ffffff,
+        700: #ffffff,
+        800: #ffffff,
+        900: #ffffff,
+    )));
+
+    $primary: mat-palette($brand-pine-with-contrast);
     $accent: mat-palette($mat-grey, 600, 500, 900);
     $warn: mat-palette($mat-red);
     // Create the theme object (a Sass map containing all of the palettes).

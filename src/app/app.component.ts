@@ -7,5 +7,5 @@ import {FormControl} from '@angular/forms';
 })
 export class AppComponent {
   themeControl = new FormControl();
-  themes: string[] = ['blue (default)', 'green', 'yellow', 'purple'];
+  themes: string[] = ['blue (default)', 'green', 'yellow', 'purple', 'brand-pine'];
 }
