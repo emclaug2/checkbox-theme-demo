@@ -1077,6 +1077,13 @@
     "@pxblue/colors" "^2.0.0"
     typeface-open-sans "^0.0.75"
 
+"@pxblue/colors-branding@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@pxblue/colors-branding/-/colors-branding-3.0.1.tgz#03d7b48b2c4bc1551a601f8bb96068f79ffd3517"
+  integrity sha512-iLJHgTBMkTiKWCOaFwclEzMZ4F6bIv1fBCKzuINZsJhmxFJ6KzbFjzehIdnI7/npJzQIVXWRy+L6126C84aLSQ==
+  dependencies:
+    "@pxblue/types" "^1.0.0"
+
 "@pxblue/colors@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@pxblue/colors/-/colors-2.0.1.tgz#d24dae5bc6c3b9755b52a22738aa567bfeea3b8c"
